@@ -5,34 +5,64 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title>Ping-Pong</title>
+    <title>Ping Pong</title>
   </head>
   <body>
-    <h1>Ping Pong</h1>
-    <h2> Let's play!<h2>
-    <h3>Rules:</h3>
-    <p>Ping Pong will count up to your number form 1 with the following exceptions:
-    </p>
-    <ol>
-      <li>Numbers divisible by 3 become "ping"</li>
-      <li>Numbers divisible by 5 become "pong"</li>
-      <li>Nubmers divisible by 3 and 5 become "pingpong"</li>
-    </ol>
-
-    <form id="input" class="form-inline">
-      <div class="form-group">
-          <label for="number">Enter your number here:</label>
-          <input id="number" class="form-control" type="number"></input>
-        </div>
-
-        <button type="submit" class="btn">Submit</button>
-    </form>
-
-    <div id="result">
-      <ul>
-        <span class="ppNumbers"></span>
-      </ul>
+    <div id="topBanner">
+      <div class="container">
+        <h1>Ping Pong</h1>
+      </div>
     </div>
+    <!-- end topBanner -->
 
+    <div id="mainBody" class="container">
+      <div class="row fill">
+        <div class="wrapper">
+          <div id="about" class="sidebar hidden-xs">
+            <h3>About Ping Pong</h3>
+            <h4>Created By:</h4>
+            <p>Kevin Deganos</p>
+            <h4>GitHub Username/URL:</h4>
+            <p><a href="https://github.com/kdeganos">kdeganos</a></p>
+            <h4>Independent Project for:</h4>
+            <p>Intro to Programming</p>
+          </div>
+          <div class="col-lg-9 rightCol">
+            <div id="instructions" class = "container">
+              <h2>Let's play!<h2>
+              <h3>Rules:</h3>
+              <p>Ping Pong will count up to your number from 1 with the following exceptions:
+              </p>
+
+              <ol>
+                <li>Numbers divisible by 3 become "ping"</li>
+                <li>Numbers divisible by 5 become "pong"</li>
+                <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+              </ol>
+
+              <form id="input" class="form-inline">
+                <div class="form-group">
+                    <label for="number">Enter your number here:</label>
+                    <input id="number" class="form-control" type="number"></input>
+                  </div>
+
+                  <button type="submit" class="btn">Ping Pong!</button>
+              </form>
+            </div>
+            <!-- end instructions -->
+
+            <div id="result" class="container">
+              <ul>
+                <span class="ppList"></span>
+              </ul>
+            </div>
+            <!-- end result -->
+          </div>
+          <!-- end column -->
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end mainBody -->
   </body>
 </html>
